@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Ohne_Titel_1</title>
+    <link rel="stylesheet" href="src/styles.css">
+
+    <style type="text/css">
+	.auto-style1 {
+		text-align: center;
+	}
+	.auto-style2 {
+		text-align: center;
+		background-color: #d1bc8a;
+    height: 100px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+	</style>
+  </head>
+
+  <body>
+    <div id="listing">
+      <div class="box" id="adding">
+        <h2 class="auto-style2">Add a City :)</h2>
+        <form id="formfilling" action="">
+            <div class="auto-style1">
+          <input id="country" type="text" placeholder="country" style="width: 700px; height: 50px" />
+          <br />
+          <input id="city" type="text" placeholder="city" required style="width: 700px; height: 50px" />
+          <br />
+          <input id="year" type="number" placeholder="year of visit" style="width: 700px; height: 50px" />
+          <br />
+
+          <textarea name="" id="descripton" rows="8" style="width: 700px"></textarea>
+          <br />
+          <div id="errors"></div>
+          <button class="add-me">add me!</button>
+        	</div>
+        </form>
+      </div>
+    </div>
+
+    <div id="listcity"></div>
+
+    <div id="fix"></div>
+    <!-- <button onclick="append2()">Click me</button> -->
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
